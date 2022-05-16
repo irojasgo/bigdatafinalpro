@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "deductive-torus-348920",
+  "private_key_id": "2fe7fd3fd9b6d03b4d109ed91e106a1ea29557cb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8TplcX56xPEVu\nbz6i0bnOYGkM7a/T0HkbScnsaQT+gAkdZXi6+Q8HtUASpklloj7JGivvnwm1VFm2\n4l2588o60RA925hJciMvIjwEbILSeBEWRATE2Em3V/9yICOF/cKDLLEptzsB5B2B\nH2ZcowijYACxS7EU8/JUfc9dj0PBJ3WtsZbEyBIooEx4/o0l0aSdBGJW/6s1nC1x\nmJqyKJ0av9UjoGSeU9Ee9mq0oYjVVj6gOP0VdsYAI+E3k6tV2jj37CI3nwg9T7kx\n3WbSadyNRsm7jwECHe1KhirEAvhYsnA4X6FyCYBBI9MOrK311ggsAHbVUXXA10uj\nxKma6lJjAgMBAAECggEAVuJTK4ZpA7Dh/krw1RI8j4b3YYI32tz5TAh3VQ+9wKmV\nywz7MBXjg/RyrEgyXGUIYCSlugmg4pwZSuNWSIq+N/YnbssoEFdL+Z7rn0Tr9a11\ngNcAdkyvcpt1HxTKHzRPL9QKqEtFPCGjJWU2By8oOK1+lE9u1NKb8LUd3TbRlchQ\n9crK8Omj7p1QaAZFrnHmlOiuCqqYMm2OpdMyVjQ7suiBfiRrk2PFTRDZOXWNjzkV\nQUr+VYA60aARXpjZaPWy1oTFvyDDqjwsD7yDx0Rb4C35hDMyhkbGHSFv36YZo38B\ngU6BJ+Q8iqDyvSVTnD3Pj1woa09TKSuZ7QHXb5ZLeQKBgQD9cNLsRS9QRLN7SbSd\nBaJZ3MnsQuuAcQbAhJExKTpjlpHIeUatLG/NuIneUgEtDWWTCaWOkshQlRmcD6A8\nzaLi59akorF34tylqGtQLvQ+/FzJ71F+F0iHPBj1mUlp5rTk0i+a1U4JESAuzlIO\n5wlowZldGsePkNKxqxeEKax7uQKBgQC+NWV5C+7iM/gi0vGwyzO5RskDPPFx3qGq\nrq2PmEH5xj89luAGJ7iaI5zzUAhb+kYQI+falWdPysZhj/rHvGvGxxbDL6CsRSIo\n5KqdsMERWN7GnM/QrqePbj6i0ojQqEK6mU9ECuj71rKdR2BB7TtvrbFwNrH02LbN\nVGL2kh8k+wKBgFGgqQ6YKej8d6JZ1uZMDkJLLm3+D8PKo5YWHH1s/fVdZY7gILdd\n/JSRvzXvy5krG3AER2JoPERYAWuWTNHImZHjgep8zBQE6XQhjo7A0MIIngocHm8y\nKJYF8TQJLvAA8npQiCyiTwP0lBz/LsbF+u3WjQLDwUqoJnQ62tQiZ/9hAoGASpha\nUVyStPe4qr+btcAbauAN2U0/S28KbAvRWW1XAoPzLU5MUV2mkhzBYtLSVHAUpiPO\nu/S37Z0SrBRxP3/vrKdLkATPuH/sY6k6GFnHfewigjXhcm/smt2bhvOWYG58rP2P\nDppQwON0bSYe4/wLwUKXQfDRXbrYBjLAFP89Y50CgYEA5tu4WwrxNFopuVuRAKak\nYjhOJq/x2cbQBGWO5FnO9VsnwWrfXQt+MSwbDYm3dRXNgJ2ASYWURVYSWNxnbvxi\nHuEE9uO8F21B00iJ1CTAWDi5vjSoCjCRUoRso1GRCBCI2EJAP8+JVDmbBiiaZSYt\nx+nNXstgvAvbbB7iVlw59Xs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bigdata-storage-sa@deductive-torus-348920.iam.gserviceaccount.com",
+  "client_id": "107511120080038607387",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bigdata-storage-sa%40deductive-torus-348920.iam.gserviceaccount.com"
+}

@@ -1,0 +1,99 @@
+CREATE TABLE centros_comerciales(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, tipo VARCHAR(100), calle VARCHAR(100), numero VARCHAR(100),
+colonia VARCHAR(100), codigo_postal VARCHAR(100),alcaldia VARCHAR(100));
+
+CREATE TABLE consumo_agua_bimestral(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, cve_ent VARCHAR(100), alcaldia VARCHAR(100), cve_col VARCHAR(100), colonia VARCHAR(250)
+, objectid VARCHAR(10), frequency int, sum_cons_t FLOAT, mean_cons FLOAT, viv2010 int, promvivcon FLOAT, c_promvivc int);
+
+CREATE TABLE hogares_por_colonia(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, cve_ent VARCHAR(100), alcaldia VARCHAR(100), colonia VARCHAR(250)
+, vivhab2010 int, vivhab2020 int, area_ha FLOAT, denviv10 FLOAT, denviv20 FLOAT, sum_tothog FLOAT);
+
+CREATE TABLE poblacion_disponibilidad_agua_vivienda(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, alcaldia VARCHAR(100), clave VARCHAR(10), poblacion int,
+poblacion_agua_patio int, porcentaje_poblacion_agua_patio FLOAT, poblacion_no_agua_entubada int, porcentaje_poblacion_no_agua_entubada FLOAT, 
+poblacion_agua_pipa int, porcentaje_poblacion_agua_pipa FLOAT);
+
+CREATE TABLE poblacion_total(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, alcaldia VARCHAR(100), poblacion_total int);
+
+CREATE TABLE ue_comerciales(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT);
+
+CREATE TABLE ue_industriales(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT, ue_industr VARCHAR(10),geometry VARCHAR(250));
+
+CREATE TABLE ue_orientadas_servicios(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT, ue_servici VARCHAR(10),geometry VARCHAR(250));
+
+CREATE TABLE ue_por_colonia(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT,geometry VARCHAR(250));
+
+CREATE TABLE viviendas_sin_drenaje(id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cve_ent int, alcaldia VARCHAR(100), cve_col VARCHAR(10), colonia VARCHAR(100),
+pob_2010 int,sup_col_m2 FLOAT,pob_2020 int,
+vivtot int,tvivhab int,tvivpar int,vivpar_hab int,
+tvivparhab int,vivpar_des int,vivpar_ut int,ocupvivpar int,
+prom_ocup FLOAT,pro_ocup_c FLOAT,vph_pisodt int,vph_pisoti int,
+vph_1dor int,vph_2ymasd int,vph_1cuart int,vph_2cuart int,
+vph_3ymasc int,vph_c_elec int,vph_s_elec int,vph_aguadv int,
+vph_aeasp int, vph_aguafv int,vph_tinaco int, vph_cister int,
+vph_excsa int, vph_letr int,vph_drenaj int, vph_nodren int,
+vph_c_serv int, vph_ndeaed int,vph_dsadma int, vph_ndacmm int,
+vph_snbien int, vph_refri int,vph_lavad int, vph_hmicro int,
+vph_autom int, vph_moto int,vph_bici int, vph_radio int,
+vph_tv int, vph_pc int,vph_telef int, vph_cel int,
+vph_inter int, vph_stvp int,vph_spmvpi int, vph_cvj int,
+vph_sinrtv int, vph_sinltc int,vph_sincin int, vph_sintic int,
+geometry VARCHAR(250));
+
+
+
+DROP TABLE centros_comerciales;
+DROP TABLE consumo_agua_bimestral;
+DROP TABLE hogares_por_colonia;
+DROP TABLE poblacion_disponibilidad_agua_vivienda;
+DROP TABLE poblacion_total;
+DROP TABLE ue_comerciales;
+DROP TABLE ue_industriales;
+DROP TABLE ue_orientadas_servicios;
+DROP TABLE ue_por_colonia;
+DROP TABLE viviendas_sin_drenaje;
+
+DELETE FROM centros_comerciales;
+DELETE FROM consumo_agua_bimestral;
+DELETE FROM hogares_por_colonia;
+DELETE FROM poblacion_disponibilidad_agua_vivienda;
+DELETE FROM poblacion_total;
+DELETE FROM ue_comerciales;
+DELETE FROM ue_industriales;
+DELETE FROM ue_orientadas_servicios;
+DELETE FROM ue_por_colonia;
+DELETE FROM viviendas_sin_drenaje;
+
+
+SELECT * FROM centros_comerciales LIMIT 3;
+SELECT * FROM consumo_agua_bimestral LIMIT 3;
+SELECT * FROM hogares_por_colonia LIMIT 3;
+SELECT * FROM poblacion_disponibilidad_agua_vivienda LIMIT 3;
+SELECT * FROM poblacion_total LIMIT 3;
+SELECT * FROM ue_comerciales LIMIT 3;
+SELECT * FROM ue_industriales LIMIT 3;
+SELECT * FROM ue_orientadas_servicios LIMIT 3;
+SELECT * FROM ue_por_colonia LIMIT 3;
+SELECT * FROM viviendas_sin_drenaje LIMIT 3;
+
+
+
+
+SELECT COUNT(*) FROM centros_comerciales;
+SELECT COUNT(*) FROM consumo_agua_bimestral;
+SELECT COUNT(*) FROM hogares_por_colonia;
+SELECT COUNT(*) FROM poblacion_disponibilidad_agua_vivienda;
+SELECT COUNT(*) FROM poblacion_total;
+SELECT COUNT(*) FROM ue_comerciales;
+SELECT COUNT(*) FROM ue_industriales;
+SELECT COUNT(*) FROM ue_orientadas_servicios;
+SELECT COUNT(*) FROM ue_por_colonia;
+SELECT COUNT(*) FROM viviendas_sin_drenaje;
+
+show tables;
+
+
+
