@@ -1,0 +1,10 @@
+load data inpath '/user/irojasgo/centros_comerciales/part-m-*' into table centros_comerciales;
+load data inpath '/user/irojasgo/consumo_agua_bimestral/part-m-*' into table consumo_agua_bimestral;
+load data inpath '/user/irojasgo/hogares_por_colonia/part-m-*' into table hogares_por_colonia;
+load data inpath '/user/irojasgo/poblacion_disponibilidad_agua_vivienda/part-m-*' into table poblacion_disponibilidad_agua_vivienda;
+load data inpath '/user/irojasgo/poblacion_total/part-m-*' into table poblacion_total;
+load data inpath '/user/irojasgo/ue_comerciales/part-m-*' into table ue_comerciales;
+load data inpath '/user/irojasgo/ue_industriales/part-m-*' into table ue_industriales;
+load data inpath '/user/irojasgo/ue_orientadas_servicios/part-m-*' into table ue_orientadas_servicios;
+load data inpath '/user/irojasgo/ue_por_colonia/part-m-*' into table ue_por_colonia;
+load data inpath '/user/irojasgo/viviendas_sin_drenaje/part-m-*' into table viviendas_sin_drenaje;

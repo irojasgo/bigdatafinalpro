@@ -17,31 +17,27 @@ CREATE TABLE ue_comerciales(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre V
 cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT);
 
 CREATE TABLE ue_industriales(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
-cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT, ue_industr VARCHAR(10),geometry VARCHAR(250));
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT);
 
 CREATE TABLE ue_orientadas_servicios(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
-cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT, ue_servici VARCHAR(10),geometry VARCHAR(250));
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT);
 
 CREATE TABLE ue_por_colonia(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(100), entidad VARCHAR(10), cve_alc VARCHAR(10), alcaldia VARCHAR(100),
-cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT,geometry VARCHAR(250));
+cve_col VARCHAR(10), ue int, ind int, com int, serv int, sup_ha FLOAT);
 
-CREATE TABLE viviendas_sin_drenaje(id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-cve_ent int, alcaldia VARCHAR(100), cve_col VARCHAR(10), colonia VARCHAR(100),
-pob_2010 int,sup_col_m2 FLOAT,pob_2020 int,
-vivtot int,tvivhab int,tvivpar int,vivpar_hab int,
-tvivparhab int,vivpar_des int,vivpar_ut int,ocupvivpar int,
-prom_ocup FLOAT,pro_ocup_c FLOAT,vph_pisodt int,vph_pisoti int,
-vph_1dor int,vph_2ymasd int,vph_1cuart int,vph_2cuart int,
-vph_3ymasc int,vph_c_elec int,vph_s_elec int,vph_aguadv int,
-vph_aeasp int, vph_aguafv int,vph_tinaco int, vph_cister int,
-vph_excsa int, vph_letr int,vph_drenaj int, vph_nodren int,
-vph_c_serv int, vph_ndeaed int,vph_dsadma int, vph_ndacmm int,
-vph_snbien int, vph_refri int,vph_lavad int, vph_hmicro int,
-vph_autom int, vph_moto int,vph_bici int, vph_radio int,
-vph_tv int, vph_pc int,vph_telef int, vph_cel int,
-vph_inter int, vph_stvp int,vph_spmvpi int, vph_cvj int,
-vph_sinrtv int, vph_sinltc int,vph_sincin int, vph_sintic int,
-geometry VARCHAR(250));
+CREATE TABLE viviendas_sin_drenaje(
+id int NOT NULL PRIMARY KEY AUTO_INCREMENT,cve_ent int,alcaldia VARCHAR(100),cve_col VARCHAR(10),colonia VARCHAR(100),
+pob_2010 int,sup_col_m2 FLOAT,pob_2020 int,vivtot int,tvivhab int,
+tvivpar int,vivpar_hab int,tvivparhab int,vivpar_des int,vivpar_ut int,
+ocupvivpar int,prom_ocup FLOAT,pro_ocup_c FLOAT,vph_pisodt int,vph_pisoti int,
+vph_1dor int,vph_2ymasd int,vph_1cuart int,vph_2cuart int,vph_3ymasc int,
+vph_c_elec int,vph_s_elec int,vph_aguadv int,vph_aeasp int, vph_aguafv int,
+vph_tinaco int, vph_cister int,vph_excsa int, vph_letr int,vph_drenaj int, 
+vph_nodren int,vph_c_serv int, vph_ndeaed int,vph_dsadma int, vph_ndacmm int,
+vph_snbien int, vph_refri int,vph_lavad int, vph_hmicro int,vph_autom int, 
+vph_moto int,vph_bici int, vph_radio int,vph_tv int, vph_pc int,
+vph_telef int, vph_cel int,vph_inter int, vph_stvp int,vph_spmvpi int, 
+vph_cvj int,vph_sinrtv int, vph_sinltc int,vph_sincin int, vph_sintic int);
 
 
 

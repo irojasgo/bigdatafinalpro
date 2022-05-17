@@ -1,0 +1,10 @@
+drop table centros_comerciales;
+drop table consumo_agua_bimestral;
+drop table hogares_por_colonia;
+drop table poblacion_disponibilidad_agua_vivienda;
+drop table poblacion_total;
+drop table ue_comerciales;
+drop table ue_industriales;
+drop table ue_orientadas_servicios;
+drop table ue_por_colonia;
+drop table viviendas_sin_drenaje;
